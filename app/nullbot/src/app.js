@@ -5,6 +5,10 @@ import regulationsDm from './controllers/regulationsDm.controller.js';
 import envValidity from '../envValidate.js'
 import errorHandlerEmail from './services/errorHandlerEmail.js';
 
+import logger from '@sharecode/log'
+
+logger();
+
 // * to validate the minium requiment to run the applications.
 envValidity();
 

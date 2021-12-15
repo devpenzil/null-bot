@@ -1,0 +1,51 @@
+{
+  "name": "null-bot",
+  "version": "1.0.0",
+  "description": "null bot for nullcast",
+  "main": "src/app.js",
+  "scripts": {
+    "release": "standard-version",
+    "build": "node src/app.js prod",
+    "start": "node src/app.js prod",
+    "dev": "nodemon src/app.js dev",
+    "serve-prod": "nodemon src/app.js prod",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Planet-NULLCAST/null-bot.git"
+  },
+  "keywords": [
+    "node",
+    "discordjs",
+    "bot"
+  ],
+  "author": "neoito",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Planet-NULLCAST/null-bot/issues"
+  },
+  "homepage": "https://github.com/Planet-NULLCAST/null-bot#readme",
+  "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "canvacord": "^5.2.3",
+    "canvas": "^2.8.0",
+    "discord-api-types": "^0.24.0",
+    "discord-canvas": "^1.4.1",
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0",
+    "handlebars": "^4.7.7",
+    "nodemailer": "^6.7.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
+    "eslint": "^8.2.0",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.15",
+    "prettier": "2.4.1",
+    "standard-version": "^9.3.2"
+  }
+}
